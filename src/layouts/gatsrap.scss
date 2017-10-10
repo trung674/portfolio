@@ -138,6 +138,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  position: absolute;
+  background-image: url("/img/banner-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -153,4 +161,25 @@ img {
 img:hover {
   -webkit-animation: pulse 0.5s;
   animation: pulse 0.5s;
+}
+
+.box {
+  border: 1px solid #ffffff;
+  margin-top: 8rem;
+  background-color: rgba(5, 5, 5, 0.541);
+  color: #ffffff;
+}
+
+.box-title {
+  margin-bottom: 2rem;
+}
+
+.box-content {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
 }

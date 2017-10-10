@@ -9,12 +9,11 @@ class Banner extends React.Component {
     const author = data.author
 
     return (
-      <div className="container-fluid banner-wrap">
-        <div className="container d-flex flex-column justify-content-center banner-content">
-          <h1 className="banner-title display-3">programmer.moe</h1>
-          <p className="banner-p">Hi, my name is Trung Nguyen and I am a software engineer/full-stack developer</p>
-          <p className="banner-p">I love coding, gaming and anime.</p>
-
+      <div className="container box">
+        <div className="d-flex flex-column justify-content-center box-content">
+          <h1 className="box-title display-3">&lt;Hello World /&gt;</h1>
+          <p className="lead">Hi, my name is Trung Nguyen and I am a software engineer/full-stack developer</p>
+          <p className="lead">I love coding, gaming and anime.</p>
         </div>
       </div>
     )

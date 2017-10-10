@@ -1,0 +1,13 @@
+.sl-title {
+  text-align: center;
+}
+
+.sl-icon {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .sl-icon {
+    margin: 1rem 0;
+  }
+}
