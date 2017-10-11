@@ -138,12 +138,31 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  position: absolute;
-  background-image: url("/img/banner-bg-1.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+#___gatsby:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: url('/img/banner-bg-1.jpg');
+  background-size:cover;
+  width: 110%;
+  height: 110%;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#___gatsby {
+  overflow: auto;
+  position: relative;
 }
 
 p {

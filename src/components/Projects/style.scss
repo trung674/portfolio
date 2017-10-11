@@ -1,0 +1,18 @@
+.pj-project {
+  margin: 1rem 2rem;
+  padding: 1rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+.pj-project:last-child {
+  border-bottom: none; 
+}
+
+.pj-link {
+  color: #26ff00;
+}
+
+.pj-link:hover {
+  color: #3dc525;
+}

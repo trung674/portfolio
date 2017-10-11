@@ -5,6 +5,7 @@ import LazyLoad from 'react-lazyload'
 
 import Banner from '../components/Banner'
 import SkillList from '../components/SkillList'
+import Projects from '../components/Projects'
 
 class BlogIndex extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class BlogIndex extends React.Component {
         />
         <Banner data={site} />
         <SkillList />
+        <Projects />
       </div>
     )
   }

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "1.9.36",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "Portfolio Gatsby",
+  "description": "Portfolio built with Gatsby",
+  "version": "1.0.0",
+  "author": "trung674 <thanhtrung674@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.16",
@@ -22,7 +22,6 @@
     "gatsby-source-filesystem": "^1.4.12",
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
-    "lodash": "^4.17.4",
     "react-lazyload": "^2.2.7",
     "react-responsive-grid": "^0.3.4",
     "react-tap-event-plugin": "^2.0.1",
