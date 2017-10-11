@@ -8,7 +8,7 @@ class Projects extends React.Component {
       <div className="container box">
         <div className="d-flex flex-column justify-content-center box-content">
           <h2 className="box-title display-4">&lt;Past Projects /&gt;</h2>
-          <p className="lead">Some of my proudest works, but none of them is about designing a new middle-out compression algorithm.</p>
+          <p className="lead">Some of my proudest works, but none of them is about designing a new middle-out compression algorithm</p>
 
           <div className="pj-project">
             <h2>Online Speech Recorder (2017)</h2>
