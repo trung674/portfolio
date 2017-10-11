@@ -8,7 +8,7 @@ import SkillList from '../components/SkillList'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
-class BlogIndex extends React.Component {
+class Index extends React.Component {
   render() {
     const site = this.props.data.site.siteMetadata
 
@@ -33,7 +33,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -53,7 +53,6 @@ export const pageQuery = graphql`
             layout
             title
             path
-            categories
             description
             date(formatString: "YYYY/MM/DD")
           }

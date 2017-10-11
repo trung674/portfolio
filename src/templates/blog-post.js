@@ -1,4 +1,3 @@
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
@@ -9,11 +8,11 @@ import SitePage from '../components/SitePage'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = get(this, 'props.data.post')
-    const site = get(this, 'props.data.site')
-    const layout = get(post, 'frontmatter.layout')
-    const title = get(post, 'frontmatter.title')
-    const siteTitle = get(site, 'meta.title')
+    const post = this.props.data.post
+    const site = this.props.data.site
+    const layout = post.frontmatter.layout
+    const title = post.frontmatter.title
+    const siteTitle = site.meta.title
 
     let template = ''
     if (layout != 'page') {
@@ -26,15 +25,15 @@ class BlogPostTemplate extends React.Component {
         <Helmet
           title={`${title} | ${siteTitle}`}
           meta={[
-            { property: 'og:title', content: get(post, 'frontmatter.title') },
+            { property: 'og:title', content: post.frontmatter.title },
             { property: 'og:type', content: 'article' },
             {
               property: 'og:description',
-              content: striptags(get(post, 'html')).substr(0, 200),
+              content: striptags(post.html).substr(0, 200),
             },
             {
               property: 'og:url',
-              content: get(site, 'meta.url') + get(post, 'frontmatter.path'),
+              content: `${site.meta.url}${post.frontmatter.path}`,
             },
           ]}
         />
@@ -63,7 +62,6 @@ export const pageQuery = graphql`
         layout
         title
         path
-        categories
         date(formatString: "YYYY/MM/DD")
       }
     }
