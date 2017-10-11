@@ -1,8 +1,12 @@
 {
-  "name": "Portfolio Gatsby",
+  "name": "portfolio-gatsby",
   "description": "Portfolio built with Gatsby",
   "version": "1.0.0",
   "author": "trung674 <thanhtrung674@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trung674/portfolio"
+  },
   "dependencies": {
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.16",
@@ -37,46 +41,19 @@
     "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "^7.3.0",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^1.0.0",
-    "husky": "^0.14.3",
     "lint-staged": "^4.2.1",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
     "prettier": "^1.7.0",
     "striptags": "^3.1.0",
-    "textlint": "^8.2.1",
-    "textlint-rule-preset-ja-spacing": "^2.0.1",
-    "textlint-rule-preset-japanese": "^1.3.4",
-    "wowjs": "^1.1.3"
+    "textlint": "^8.2.1"
   },
   "keywords": [
     "gatsby",
-    "gatstrap",
-    "starter"
+    "portfolio",
+    "bootstrap"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.css": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.scss": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.md": [
-      "npm run lint:textfix",
-      "git add"
-    ]
-  },
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
