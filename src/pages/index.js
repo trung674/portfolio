@@ -21,10 +21,7 @@ class BlogIndex extends React.Component {
             { property: 'og:type', content: 'website' },
             { property: 'og:description', content: site.description },
             { property: 'og:url', content: site.url },
-            {
-              property: 'og:image',
-              content: `${site.url}/img/profile.jpg`,
-            },
+            { property: 'og:author', content: site.author },
           ]}
         />
         <Banner data={site} />
@@ -46,7 +43,6 @@ export const pageQuery = graphql`
         description
         url
         author
-        twitter
       }
     }
     remark: allMarkdownRemark {
