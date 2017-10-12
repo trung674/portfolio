@@ -35,7 +35,7 @@ class Projects extends React.Component {
             <h2>Village Memories Archive Management System (2016)</h2>
             <p className="">My first working experience with a real-world client - A web application for supporting the archive management of oral history & files for the South Yorkshire villages of Micklebring, Clifton and Braithwell.</p>
             <p><strong>Technologies: </strong>Ruby on Rails | SQlite | jQuery | Google Maps API | <a className="pj-link" href="http://www.webasr.org/" target="_blank" rel="external">WebASR</a> | Heroku.</p>
-            <p><a href="https://github.com/trung674/com3420-post-project" className="pj-link" target="_blank" rel="external">Source code</a> | <a href="https://www.villagememories.org.uk/" className="pj-link" target="_blank" rel="external">Live</a></p>
+            <p><a href="https://github.com/trung674/com3420-post-project" className="pj-link" target="_blank" rel="external">Source code</a></p>
           </div>
         </div>
       </div>
