@@ -16,3 +16,13 @@
 .pj-link:hover {
   color: #3dc525;
 }
+
+
+@media screen and (max-width: 576px) {
+  .pj-project {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -24,23 +24,22 @@ class BlogIndex extends React.Component {
     const posts = this.props.data.remark.posts
 
     // const sortedPosts = posts.map(post => post.post.frontmatter.date).reverse()
-    posts.forEach((data, i) => {
-      const layout = data.post.frontmatter.layout
-      const path = data.post.path
-      if (layout === 'post' && path !== '/404/') {
-        pageLinks.push(
-          <LazyLoad height={500} offset={500} once={true} key={i}>
-            <SitePost data={data.post} site={site} isIndex={true} key={i} />
-          </LazyLoad>
-        )
-      }
-    })
+    // posts.forEach((data, i) => {
+    //   const layout = data.post.frontmatter.layout
+    //   const path = data.post.path
+    //   if (layout === 'post' && path !== '/404/') {
+    //     pageLinks.push(
+    //       <LazyLoad height={500} offset={500} once={true} key={i}>
+    //         <SitePost data={data.post} site={site} isIndex={true} key={i} />
+    //       </LazyLoad>
+    //     )
+    //   }
+    // })
 
     const postEntries = posts.map((post, i) => {
       return <BlogEntry key={i} post={post} />
     })
 
-    console.log(postEntries)
     return (
       <div className="container blog">
         <div className="blog-content">

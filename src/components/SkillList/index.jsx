@@ -7,7 +7,7 @@ class SkillList extends React.Component {
     return (
       <div className="container box">
         <div className="d-flex flex-column justify-content-center box-content">
-          <h2 className="display-4">&lt;Skills /&gt;</h2>
+          <h2 className="box-title display-4">&lt;Skills /&gt;</h2>
           <p className="lead">As a full-stack engineer, I am comfortable working with both frontend and backend</p>
 
           <div className="sl-icons mb-4 row">
@@ -48,7 +48,6 @@ class SkillList extends React.Component {
               <i className="devicon-git-plain-wordmark colored"></i>
             </div>
           </div>
-  
         </div>
       </div>
     )
